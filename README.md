@@ -2,6 +2,7 @@
 Python class to control the NI Quicksyn FSL-0010 Microwave Synthesizer
 
 Find the programming manual and datasheet for this device under Manuals and Datasheets on the Google drive, or on the National Instruments website.
+
 Features
 
 This device may be controlled with Python through its USB interface.
@@ -13,6 +14,7 @@ It will output frequencies between 500 Mhz and 10 GHz with 0.001 Hz precision, a
 It can sweep those frequencies with switching time of 100 us, and dwell times up to 4294s (about one hour). It also offers “list mode” (also called “table mode”) which allows a user to set up a list of frequencies and dwell times, which the device will run through on command.
 
 All sweeps may be run with a software trigger, a hardware trigger, or repeated hardware triggers at each point.
+
 Hardware
 
 This device has three main ports: SPI (for power and triggering), USB (interface), and RF out (signal output). Use the provided SPI connector and cable to connect to the SPI port, a USB cable for the USB port, and a SMA connector for RF OUT.
@@ -22,6 +24,7 @@ For hardware triggering, attach a trigger wire to the SPI cable, and ground it t
 To prevent damage, this device must not reach 55 °C. The attached heat sink should prevent this, but be sure to use a computer fan or other additional cooling when using this device for longer than 30 minutes.
 
 Find our Python class for this device on the Google Drive under code/Samarium_control/Widgets/Objects. It is listed as “quicksyn_synthesizer.py”.
+
 Software
 
 To set up this device with Python, type find /dev/ttyACM* into terminal before and after plugging in the USB cable. Once you know the device’s address, fill it into the “device_address” parameter in the init function.
