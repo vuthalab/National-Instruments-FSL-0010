@@ -1,8 +1,6 @@
 # National-Instruments-FSL-0010
 Python class to control the NI Quicksyn FSL-0010 Microwave Synthesizer
 
-image2.jpeg
-
 Find the programming manual and datasheet for this device under Manuals and Datasheets on the Google drive, or on the National Instruments website.
 Features
 
@@ -16,7 +14,6 @@ It can sweep those frequencies with switching time of 100 us, and dwell times up
 
 All sweeps may be run with a software trigger, a hardware trigger, or repeated hardware triggers at each point.
 Hardware
-image3.jpeg
 
 This device has three main ports: SPI (for power and triggering), USB (interface), and RF out (signal output). Use the provided SPI connector and cable to connect to the SPI port, a USB cable for the USB port, and a SMA connector for RF OUT.
 
